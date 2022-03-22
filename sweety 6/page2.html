@@ -1,322 +1,127 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>About</title>
-<meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,900;1,800&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+    <title>TanysLife</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
 </head>
-<body>
-    <style>.page{
-        height: 3000px;
-        
-    }
-    
+    <style>
     *{
-        background-color: black;
-        color:white;
-        margin: 0;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        
-    }
+    background-color: #121212;
+    color: white;
+    font-family: Montserrat;
+    margin: 0 auto;
+    padding: 0 auto;
+}
 
-    .header{
-        width: 100%;
-        height: 150px;
-        background-color: black;
-        color: white;
-        
-        
-    }
+.main{
     
-    .nav{
-        margin-right: 20px;
-            
-    }
-    
-    .header h1{
-        margin-left: 20px;
-        
-        font-size: 50px;
-    }
-    
-    .navigation{
-        
-        display: flex;
-        justify-content: flex-end;
-       
-        
-    }
-        
-        a{ text-decoration: none;
-        color: white;
-        display: flex;
-            justify-content: center;
-        font-size: 30px;}
-        
-        a:hover{
-            color: gold;
-        }
-    
-         .nav a{
-        
-        margin: 0;
-        padding-left: 40px;
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-    }
-    
-    .nav a:hover{
-        color:gold;
-        transition: 0.3s;   
-    }
-        .Info1{
-            
-        }
-        
-        .video{
-            width: 900px;
-        }
-        
-        .tableF{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .vid{
-            padding-top: 50px;
-            padding-bottom: 50px;
-            width: 100%;
-            object-fit: cover;
-            height: 200px;
-        }
-        .content1{
-             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        
-        .block{
-            width: 300px;
-            text-align: center;
-        }
-        
-        .block1{
-            margin-top: 50px;
-            width: 100px;
-            text-align: center;
-        }
-        
-        .cascad{
-            padding-top: 100px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        
-        .block2 img{
-            border-radius: 5px;
-            width: 800px;
-            
-        }
-        
-        .block3{
-            margin-top: 130px;
-            width: 500px;
-        }
-        
-        .block4{
-            text-align: right;
-            margin-top: 130px;
-            width: 500px;
-        }
-        
-        .vidInfo{
-            max-width: 1920px;
-            width: 100%;
-            margin-top: 50px;
-            padding-bottom:  200px;
-        }
-        
-        .swiper-container{
-            width: 620px;
-            height: 300px;
-        }
-        
-        .cascad1{
-            text-align: center;
-            padding-top: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        
-        .block5{
-            text-align: center;
-        }
+}
+
+.head a{
+    font-size: 20px;
+    margin-left: 3vw;
+    text-decoration: none;
+}
+
+a:hover{
+    color: gold;
+    transition: 0.3s;
+}
+
+.head{
+    margin-top: 30px;
 
     
+}
+
+.mid{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.mid1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.mid3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+
+.post{
+    height: 400px;
+    width: 300px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.post1{
+    height: 600px;
+    width: 800px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.footer{
+    margin-top: 150px;
+    height: 300px;
+    background-color: white;
+    width: 100%;
+}
     </style>
-    
-<div class="page">
-    <div class="header">
-    <div class="nav">
-        <h1>Royal Motors</h1>
-        <nav class="navigation">
-            <a href="page1.html">Home</a>
-            <a href="page2.html">About</a>
-            <a href="page3.html">Buy a Car!</a>
-            <a href="#">Address</a>
-        </nav>
-    </div>
-    </div>
-    
-        <div class="main">
-    
-        <div class="Info1">
-            
-        <table class="tableF">
-            <thead><h1>Exclusive cars</h1></thead>
-            <tbody><br>
-                <tr><td><h2>New Cars</h2><img src="img/af1%20(1).jpg"><br><a href="#">Show all</a></td>
-                
-                <td><h2>
-                    Coming Soon</h2><img src="img/af2%20(1).jpg"><br><a href="#">Show all</a></td>
-                
-                <td><h2>Questions</h2><img src="img/af2%20(2).jpg"><br><a href="#">Ask</a></td>
-                <td><h2>Our Support</h2><img src="img/af1%20(2).jpg"><br><a href="#">Call</a></td></tr>
-            </tbody>
-                </table>
-
-           
-            
-        
+<body>
+    <div class="main">
+        <div class="head">
+            <a href="#"><img src="img/logo@4x.png" style="width: 120px; margin-right: 38vw;"></a>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Tanys</a>        
         </div>
-            
-            <div class="content">
-            <div class="Bigwidget"><video class="vid" autoplay muted loop src="video/RR.mp4"></video></div>
-            </div>
-            
-            <div class="content1">
-                <div class="block"><h2>1 Step</h2><img src="img/credit-card.png"><p >Payment for the car according to the invoice after which a verification call of the request will be made and its confirmation.
-                    </p></div>
-                <div class="block1"><img src="img/arrow-right%20(1).png"></div>
-                <div class="block"><h2>2 Step</h2><img src="img/mail.png"><p>Personal wishes of the customer specified in the message. Due to the options, the price of the car may vary.</p></div>
-                <div class="block1"><img src="img/arrow-right%20(1).png"></div>
-                <div class="block"><h2>3 Step</h2><img src="img/clock.png"><p>Waiting for the car to be delivered to the specified address and time.</p></div>
+        <div class="mid">
+            <div class="post1"></div>
 
-            </div>
-            
-            <div class="cascad">
-                
-                <div class="block2"><img src="img/blocks1%20(1).jpg"></div>
-                <div class="block3"><h2>About Ryal Motors</h2><p>Trading hall with an area of ​​10 thousand sq. meters can accommodate more than 300 cars, prestigious brands Bentley, Ferrari, Mercedes-Benz, Porsche, armored, retro and electro cars.
+        </div>        <div class="mid1">
+            <div class="info1"><h2>Hello</h2><p>Lorem</p></div>
 
-                    A large assortment and a competent approach of the personnel based on the professionalism and saving of the Client's time are our hallmarks. An urgent assessment, legal assistance, technical support, and all this quickly, without unnecessary delays, with a guarantee of benefits for all parties to the transaction.
-
-                    We are always ready to help in buying and selling a car. With us you can buy elite cars on favorable terms, put your car on a commission at your price, urgently sell the vehicle with an assessment on favorable terms.
-
-                    Cars are our passion. To everyone who wants to share this passion with us, we invite you to participate in our Royal Motors Club.
-
-                    We are glad to see you in our showroom. Contact us!</p></div>
-            
-            </div>
-            
-                        <div class="cascad">
-                
-                
-                <div class="block4"><h2>About Ryal Motors</h2><p>Trading hall with an area of ​​10 thousand sq. meters can accommodate more than 300 cars, prestigious brands Bentley, Ferrari, Mercedes-Benz, Porsche, armored, retro and electro cars.
-
-                    A large assortment and a competent approach of the personnel based on the professionalism and saving of the Client's time are our hallmarks. An urgent assessment, legal assistance, technical support, and all this quickly, without unnecessary delays, with a guarantee of benefits for all parties to the transaction.
-
-                    We are always ready to help in buying and selling a car. With us you can buy elite cars on favorable terms, put your car on a commission at your price, urgently sell the vehicle with an assessment on favorable terms.
-
-                    Cars are our passion. To everyone who wants to share this passion with us, we invite you to participate in our Royal Motors Club.
-
-                    We are glad to see you in our showroom. Contact us!</p></div>
-                            <div class="block2"><img src="img/blocks1%20(2).jpg"></div>
-            
-            </div>
-            
-                <div class="cascad">
-                <div class="block2"><img src="img/blocks1%20(3).jpg"></div>               
-                
-                <div class="block3"><h2>About Ryal Motors</h2><p>Trading hall with an area of ​​10 thousand sq. meters can accommodate more than 300 cars, prestigious brands Bentley, Ferrari, Mercedes-Benz, Porsche, armored, retro and electro cars.
-
-                    A large assortment and a competent approach of the personnel based on the professionalism and saving of the Client's time are our hallmarks. An urgent assessment, legal assistance, technical support, and all this quickly, without unnecessary delays, with a guarantee of benefits for all parties to the transaction.
-
-                    We are always ready to help in buying and selling a car. With us you can buy elite cars on favorable terms, put your car on a commission at your price, urgently sell the vehicle with an assessment on favorable terms.
-
-                    Cars are our passion. To everyone who wants to share this passion with us, we invite you to participate in our Royal Motors Club.
-
-                    We are glad to see you in our showroom. Contact us!</p></div>
-
-            
-            </div>
-        
-            <div class="cascad1">
-                <div class="block2"><img src="img/footer.jpg"></div>               
-                
-                <div class="block5"><h2>Some Info</h2><p>                    A large assortment and a competent approach of the personnel based on the professionalism and saving of the Client's time are our hallmarks. An urgent assessment, legal assistance, technical support, and all this quickly, without unnecessary delays, with a guarantee of benefits for all parties to the transaction.
-
-                    We are always ready to help in buying and selling a car. With us you can buy elite cars on favorable terms, put your car on a commission at your price, urgently sell the vehicle with an assessment on favorable terms.
-
-                    Cars are our passion. To everyone who wants to share this passion with us, we invite you to participate in our Royal Motors Club.
-
-                    We are glad to see you in our showroom. Contact us!</p></div>
-
-            
-            </div>
-            
-            <div class="vidInfo">
-                
-               <div class="window">
-                   <div class="swiper-scrollbar"></div>
-                   
-        <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/DnRUv-e09uU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/cogEfdKmyHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/LuK4JKymdT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>            <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/K5D5j_g7xvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>            <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/d9mI2vjwagM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>       
-     
-        </div> 
-            
-            <br>
-            <br>
-
+        </div>        <div class="mid3">
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
         </div>
+        <div class="footer"></div>
     </div>
-                <script>
-                
-    var swiper = new Swiper('.swiper-container', {
-        sliderPerView:1,
-        spaceBetween: 1,
-        
-        scrollbar:{
-            el:".swiper-scrollbar",
-            draggable : true,
-            dragSize : 120
-            
-        }
-    });
-                    
-                </script>
-            
-            
-            </div>
-            
-    </div>
-</div>   
 </body>
 </html>
