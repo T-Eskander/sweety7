@@ -1,431 +1,127 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>first page</title>
-<meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,900;1,800&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+    <title>TanysLife</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
 </head>
-<body>  
-<style>
-    
-    .page{
-        height: 3000px;
-        
-    }
-    
+    <style>
     *{
-        
-        margin: 0;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        
-    }
+    background-color: #121212;
+    color: white;
+    font-family: Montserrat;
+    margin: 0 auto;
+    padding: 0 auto;
+}
 
-    .header{
-        width: 100%;
-        height: 150px;
-        background-color: black;
-        color: white;
-        
-        
-    }
+.main{
     
-    .nav{
-        margin-right: 20px;
-            
-    }
-    
-    .header h1{
-        margin-left: 20px;
-        
-        font-size: 50px;
-    }
-    
-    .navigation{
-        
-        display: flex;
-        justify-content: flex-end;
-       
-        
-    }
-    
-    .swiper-slide img{
-        
-        width: 100%;
-        height: 800px;
-        object-fit: cover;
-        position: absolute;
-    }
-    
-    .swiper-scrollbar{
+}
 
+.head a{
+    font-size: 20px;
+    margin-left: 3vw;
+    text-decoration: none;
+}
 
+a:hover{
+    color: gold;
+    transition: 0.3s;
+}
 
-    }
-    
-    .window{
-        
-        margin-top: 50px;
-        width: 100%;
-    }
-    
-    .nav a{
-        
-        margin: 0;
-        padding-left: 40px;
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-    }
-    
-    .nav a:hover{
-        color:gold;
-        transition: 0.3s;   
-    }
-    
-    .list{
-        height: 400px;
-        background-color: black;
-    }
-    
-    .mainContent{
-        margin-top: 800px;
-        background-color: black;
-        height: 600px;
-        color:white;
-    }
-
-    h2{
-        text-align: center;
-    }
-    
-    .widget{
-        display: flex;
-        justify-content: center;
-        width: 1920px;
-        color: white;
-        
-    }
-    
-    .widI{
-        display: flex;
-        margin: 50px;
-        margin-top: -500px;
-        height: 300px;
-        border-radius: 25px;
-        
-    }
-    
-    .butt{
-        margin-left: 60px;
-
-        font-size: 25px;
-        border-radius: 15px;
-        background-color: red;
-        border-color: red;
-        font-weight: 600;
-    }
-    
-    .widgetReview{
-        display: flex;
-        justify-content: center;
-        border-radius: 50px;
-    }
-    
-    .review{
-        padding-top: 20px;
-        padding-bottom: 80px;
-    }
-    
-    .infoReview{
-        margin-right: 50px;
-        margin-left: 50px;
-        margin-top: 160px;
-    }
-    
-    .VidReview{
-        border-radius: 50px;
-        margin-left: 50px;
-        margin-top: 50px;
-        
-    }
-    .infoVR{
-        color:white;
-    }
-    
-    
-    .linksW a:hover{
-        color: gold;
-
-    }
-    
-    .footer{
-        background-color: black;
-        color: white;
-        display: flex;
-        justify-content: center;    
-    }
-    .footerContent{
-        margin-top: 50px;
-        margin-left: 50px;
-        margin-right: 50px;
-                display: flex;
-        justify-content: center; 
-    }
-    .UL{
-
-
-        margin-right: 30px;
-    }
-    
-    ul{
-          list-style-type: none;
-    }
-    
-    .ul a{
-        text-decoration: none;
-        color: gold;
-    }
-    
-    .navi a{
-
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 20px;
-        color: white;
-        
-    }
-    
-    .navi a:hover{
-        color: gold;
-        transition: 0.3s;
-    }
-    
-    .InfoFooter{
-        margin-top: 5%;
-    }
-    
-    .footer img{
-        border-radius: 25px;
-        width: 500px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    
-    .table{
-        text-align: center;
-    }
-    
-    .table h2{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .vikup{
-        padding-top: 40px;
-        padding-bottom: 40px;
-        margin-left: 50px;
-        margin-right: 50px;
-        text-align: center;
-    }
-    
-    .vikup img{
-        width: 400px;
-        border-radius: 25px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .tableF{
-        display: flex;
-        justify-content: center;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    
-    .address{
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-color: black;
-        color: white;
-    }
+.head{
+    margin-top: 30px;
 
     
-    
-</style>
+}
 
-<div class="page">
-    <div class="header">
-    <div class="nav">
-        <h1>Royal Motors</h1>
-        <nav class="navigation">
-            <a href="page1.html">Home</a>
-            <a href="page2.html">About</a>
-            <a href="page3.html">Buy a Car!</a>
-            <a href="#">Address</a>
-        </nav>
+.mid{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.mid1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.mid3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+
+.post{
+    height: 400px;
+    width: 300px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.post1{
+    height: 600px;
+    width: 800px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.footer{
+    margin-top: 150px;
+    height: 300px;
+    background-color: white;
+    width: 100%;
+}
+    </style>
+<body>
+    <div class="main">
+        <div class="head">
+            <a href="#"><img src="img/logo@4x.png" style="width: 120px; margin-right: 38vw;"></a>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Tanys</a>        
+        </div>
+        <div class="mid">
+            <div class="post1"></div>
+
+        </div>        <div class="mid1">
+            <div class="info1"><h2>Hello</h2><p>Lorem</p></div>
+
+        </div>        <div class="mid3">
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+        </div>
+        <div class="footer"></div>
     </div>
-        
-        
-
-<div class="window">
-<div class="swiper-scrollbar"></div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src='img/slide1.jpg'></div>
-            <div class="swiper-slide"><img src='img/slide2.jpg'></div>
-            <div class="swiper-slide"><img src='img/slide3.jpg'></div>
-     
-        </div> 
-        <div class="swiper-scrollbar"></div>
-    </div>
- </div>   
-</div>
-    
-      <div class="mainContent"><h2 id="ts">Find Auto</h2></div>    
-        
-        <div class="list">
-        
-            <div class="widget">
-                <div><a class="linksW" href="#"><img class="widI" src="img/3.jpg"></a><h2>Bentley Bentayga '2018              <button onclick="myFunction()" class="butt" type="submit">Buy!</button></h2>
- 
-                </div>
-                <div> <a class="linksW" href="#"><img class="widI" src="img/2.jpg"></a><h2>Maybach GLS '2021              <button onclick="myFunction2()" class="butt" type="submit">Buy!</button></h2></div>
-                <div><a class="linksW" href="#"><img class="widI" src="img/1.jpg"></a><h2>Bentley Flying Spur '2021             <button onclick="myFunction3()" class="butt" type="submit">Buy!</button></h2></div>
-            </div>  <br><br><br><br><br><br><br><br>    <br><br><br><br><br><br><br><br><br><br>    <br><br><br><br>
-                <div class="widget">
-                <div><img class="widI" src="img/4.jpg"><h2>Lexus LS '2018             <button onclick="myFunction4()" class="butt" type="submit">Buy!</button></h2></div>
-               <div> <img class="widI" src="img/5.jpg"><h2>Porsche Macan '2016            <button onclick="myFunction5()" class="butt" type="submit">Buy!</button></h2></div>
-                <div><img class="widI" src="img/6.jpg"><h2>SLR McLaren '2004              <button onclick="myFunction6()" class="butt" type="submit">Buy!</button></h2></div>
-
-            </div>
-            
-        </div>
-    
-        <div class="vikup">
-        
-            <table class="table">
-            <thead><h1>Exclusive cars</h1></thead>
-            <tbody>
-                <tr><td><h2>Super Rare</h2><img src="img/infoss%20(1).jpg"><p>Decent attitude towards people who have entrusted us with their most beloved, their car.</p></td>
-                
-                <td><h2>
-                    Expensive</h2><img src="img/infoss%20(2).jpg"><p>Our team strives to be closer. We are located in the building of the </p></td>
-                
-                <td><h2>Unique</h2><img src="img/infoss%20(3).jpg"><p>Legal cleanliness of cars, as well as transactionsbuilding of the.</p></td>
-                <td><h2>Desired</h2><img src="img/infoss%20(4).jpg"><p>The sales area is 10,000 square meters, which can accommodate more </p></td></tr>
-            </tbody>
-            
-            
-            </table>
-    
-        </div>
-    
-        <div class="review">
-    
-            <div class="widgetReview"><div>
-                
-                <video class="VidReview" autoplay muted loop src="video/RR.mp4">
-                <div class="infoVR">
-                    
-                    <h3>Rolls Royce</h3><p></p></div></video></div><div class="infoReview">
-                
-                <h3>History
-                In 1998, the owners of the Vickers concern decided to get rid of the assets of Rolls-Royce Motors. The most attractive buyer was the German automaker BMW, which already supplied engines and components for Rolls-Royce and Bentley vehicles, but BMW's final £ 340m offer was outbid by another German auto giant, Volkswagen, with a £ 430m offer.
-
-                VW received from Vickers the rights to the Spirit of Ecstasy statuette and the signature Rolls-Royce radiator grille, the Bentley brand , the models , production and production facilities, headquarters. But VW was left without the Rolls-Royce  RR trademark and logo because the engineering company Rolls-Royce plc, which owned the rights to use them, decided to keep them in the event of a sale to the automotive division. Rolls-Royce plc transferred its rights to the Rolls-Royce brand and logo to BMW for $ 40 million because the two firms had joint projects.</h3></div></div>
-                
-        </div>
-    
-    <div class="footer">
-    
-        <div class="footerContent">
-            <h1>Info<br><nav class="navi">
-            
-            <ul class="UL">
-            <li><a class="navi" href="#">Home</a></li>
-            <li><a class="navi" href="#">About</a></li>
-            <li><a class="navi" href="#">Buy a Car!</a></li>
-            <li><a class="navi" href="#">Address</a></li>
-            </ul>
-            
-            </nav></h1>
-        
-            <div class="img">
-            <img src="img/s4.jpg">
-
-            </div>            <div class="img">
-            <img src="img/s5.jpg">
-
-            </div>            <div class="img">
-            <img src="img/s2.jpg">
-
-            </div>
-            
-            <div class="InfoFooter">
-            <h3>Where does it come from?
-            Contrary to popular belief, Lorem Ipsum is not simply  </h3>
-            </div>
-            
-        </div>
-        
-
-    
-    </div>
-            <div class="address">
-            
-              <table class="tableF">
-            <thead><h1>Exclusive cars</h1></thead>
-            <tbody>
-                <tr><td><h2>Contacts</h2><img src="img/af1%20(1).jpg"><h3>+7 777 777 77 71</h3></td>
-                
-                <td><h2>
-                    Addresses</h2><img src="img/af2%20(1).jpg"><h3>Al-Farabi avenue 128/4, Almaty </h3></td>
-                
-                <td><h2>Our Email</h2><img src="img/af2%20(2).jpg"><h3>EskPlay@gmail.com</h3></td>
-                <td><h2>Our Support</h2><img src="img/af1%20(2).jpg"><h3>R.M.Support@gmail.com</h3></td></tr>
-            </tbody>
-                </table>
-        </div>
-    
-</div>
-        
-  
-   
-     <script>
-    var swiper = new Swiper('.swiper-container', {
-        sliderPerView:4,
-        spaceBetween: 16,
-        scrollbar:{
-            el:".swiper-scrollbar",
-            draggable : true,
-            dragSize : 120
-            
-        }
-    });
-         
-         function myFunction(){
-             window.open("https://kolesa.kz/a/show/128012494");
-         };         function myFunction2(){
-             window.open("https://kolesa.kz/a/show/128485695");
-         };         function myFunction3(){
-             window.open("https://kolesa.kz/a/show/128482707");
-         };         function myFunction4(){
-             window.open("https://kolesa.kz/a/show/128297580");
-         };         function myFunction5(){
-             window.open("https://kolesa.kz/a/show/125591859");
-         };         function myFunction6(){
-             window.open("https://kolesa.kz/a/show/121632615");
-         };
-    
-    </script>   
 </body>
 </html>
